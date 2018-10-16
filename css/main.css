@@ -1,0 +1,101 @@
+/* CSS3 VARIABLES */
+:root {
+--btn-color: #ea625c;
+--font-family: Roboto, sans-serif;
+}
+
+/* BASIC STYLES */
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: var(--font-family);
+  font-size: 16px;
+}
+h1,h2,h3,h4,h5,h6 {
+  padding: 0;
+  margin: 0;
+  font-family: var(--font-family);
+}
+
+/* NAV STYLES */
+nav {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.main-nav {
+  display: -webkit-flex;
+  display: flex;
+  align-items:baseline;
+  list-style: none;
+}
+.main-nav li:first-child {
+  margin-right: auto;
+}
+.main-nav a {
+  margin: 15px;
+  padding-bottom: 10px;
+  color: #999999;
+	display: block;
+	text-decoration: none;
+  transition: all 150ms ease;
+}
+.main-nav a:hover {
+  color: #222;
+  border-bottom: 2px solid #222;
+}
+.main-nav input {
+  width: 170px;
+  margin-left: 25px;
+  padding-bottom: 5px;
+  padding-left: 0;
+  padding-right: 0;
+  border: none;
+  font-size: 16px;
+   border-bottom: 1px solid #222;
+}
+.main-nav input:focus {
+  outline: none;
+}
+.main-nav input::placeholder {
+  font-size: 16px;
+  color: #999;
+}
+
+/*HERO STYLES*/
+header {
+  padding-top: 15%;
+  padding-bottom: 15%;
+  max-width: 1200px;
+  margin: 0 auto;
+  background: url('../img/watches.jpg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 500px;
+}
+.main-title {
+  font-size: 64px;
+  font-weight: 700;
+  margin-bottom: 55px;
+}
+.intro-text {
+  max-width: 450px;
+  color: #999;
+  border-left: 2px solid #999;
+  padding-left: 35px;
+  margin-bottom: 45px;
+}
+.main-btn {
+  background: var(--btn-color);
+  padding: 15px 20px 15px 20px;
+  border: none;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 700;
+  transition: all 300ms ease;
+}
+
+.main-btn:hover {
+  cursor: pointer;
+  background: #d3625c;
+}
