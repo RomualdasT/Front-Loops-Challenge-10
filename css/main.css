@@ -198,3 +198,32 @@ header {
 #d-img #prev {
   max-width: 100%;
 }
+/* footer */
+#background-img {
+  width: 100%;
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../img/runners.jpg') no-repeat;
+  background-position: top -150px center;
+  background-size: cover;
+  padding: 250px 0;
+
+}
+
+#services {
+  display: grid;
+  max-width: 1200px;
+  margin: 0 auto;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas: ". s-text";
+  justify-items: end;
+}
+
+#s-text {
+  grid-area: s-text;
+}
+#s-text .main-title {
+  color: #fff;
+}
+#s-text .intro-text {
+  color: #fff;
+  border-left: 2px solid #fff;
+}
