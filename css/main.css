@@ -227,3 +227,92 @@ header {
   color: #fff;
   border-left: 2px solid #fff;
 }
+
+@media screen and (max-width: 1999px) {
+  .hero, nav, .main-content {
+    max-width: 1000px; }
+  #background-img {
+    background-position:center center;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .hero, nav, .main-content {
+    max-width: 90%; }
+
+  header {
+    background: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url('../img/watches.jpg');
+    background-repeat: no-repeat;
+    background-position: top 100px left 50px;
+    min-height: 80vh;
+  }
+
+  .intro-text {
+    color: #fff;
+    border-left: 2px solid #222;
+    background: rgba(0,0,0,0.4);
+    padding: 15px;
+  }
+
+  #demo .main-title {
+    font-size: 36px;
+    line-height: 46px;
+    margin-bottom: 25px;
+  }
+  #d-text {max-width: 250px;}
+  #background-img {
+    padding: 100px 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  .hero, nav, .main-content, #services {
+    max-width: 95%; }
+    nav input {
+      display: none;
+    }
+    .main-title {
+      margin-bottom: 0px;
+    }
+    .hero {
+      margin: 50px 0;
+      text-align: center;
+    }
+    .intro-text {
+      color: #fff;
+      max-width: 80%;
+      margin: 20px auto;
+      border:none;}
+    #features {
+      grid-template-columns: 1fr;
+      grid-column-gap: 45px;
+    }
+    #features .feature {
+      padding-top: 50px;
+      text-align: center;
+    }
+    #features .feature .feature-title {
+      padding-bottom: 5px;
+    }
+    #demo {
+      grid-template-columns: 1fr;
+      grid-template-areas: "d-text" "d-img";
+      padding: 25px 0;
+    }
+    #demo .main-title {
+      text-align: center;
+    }
+    #d-text {
+      justify-self: center;
+      text-align: center;
+    }
+    #d-img {
+      display: none;
+    }
+
+    #services {
+      grid-template-columns: 1fr;
+      grid-template-areas: "s-text";
+      text-align: center;
+    }
+
+}
